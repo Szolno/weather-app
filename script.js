@@ -39,8 +39,8 @@ form.addEventListener('submit', function(event) {
                     })
                     .then(jsData => {
                         console.log(jsData);
-                        weatherData.TempMax = jsData.DailyForecasts[0].Temperature.Minimum.Value;
-                        weatherData.TempMin = jsData.DailyForecasts[0].Temperature.Maximum.Value;
+                        weatherData.TempMax = jsData.DailyForecasts[0].Temperature.Maximum.Value;
+                        weatherData.TempMin = jsData.DailyForecasts[0].Temperature.Minimum.Value;
                         weatherData.Text = jsData.Headline.Text;
                         console.log(weatherData);
 
